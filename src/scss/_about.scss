@@ -1,0 +1,28 @@
+.about{
+	@extend %content;
+
+	.container{
+		justify-content: space-between;
+
+		@include phone {
+			flex-direction: column;
+		}
+		
+		&>div{
+			@include taplet{
+				width: calc(50% - 30px);
+
+			}
+			@include phone{
+				width: 100%;
+				text-align: center;
+				margin: 33px 0 ;
+			}
+	}
+
+	h2{
+		color: $color2;
+	}
+
+	}
+}

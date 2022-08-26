@@ -1,0 +1,22 @@
+.app2{
+	@include bg('../img/app2.jpg');
+	@extend %content;
+
+	.container{
+		justify-content: flex-end;
+		@include taplet{
+			justify-content: center;
+		}
+	}
+	
+	h2 {
+		color: $color3;
+	}
+
+	&__item{
+		@include taplet{
+			width: 80%!important;
+			text-align: center!important;
+		}
+	}
+}
